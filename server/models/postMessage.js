@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { number, String } from "prop-types";
+// import { number, String } from "prop-types";
 
 const postSchema = mongoose.Schema({
   title: String,
@@ -8,7 +8,7 @@ const postSchema = mongoose.Schema({
   tags: [String],
   selectedFile: String,
   likeCount: {
-    type: number,
+    type: Number,
     default: 0,
   },
   createdAt: {
